@@ -1,0 +1,156 @@
+
+body {
+  /* bakgrunnsbilde tatt fra: https://c4.wallpaperflare.com/wallpaper/790/791/601/northern-lights-aurora-borealis-uk-2015-wallpaper-preview.jpg */
+  background-image: url("../bilder/bakgrunnsbilde.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns:0.75fr 5fr 1.6fr 0.75fr;
+  grid-template-rows: 1.75fr 1fr auto 1fr 1fr;
+  grid-template-areas: ". header header ."
+                       ".     nav     nav     ."
+                       ".  main     main     ."
+                       ".      .       .     ."
+                       ".    footer  footer  .";
+  font-family: arial;
+  }
+
+#nav {
+  grid-area: nav;
+  display: flex;
+  background-color: rgb(29, 31, 31);
+  border-radius: 0 0 16px 16px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 1px;
+  justify-content: left; 
+}
+
+
+
+nav li {
+  list-style: none;
+  display: inline-flex;
+  margin: 15px;
+  line-height: 50px;
+}
+nav li a {
+  color: aliceblue;
+  padding: 5px;
+  font-size:xx-large;
+  text-shadow: 5px 6px 7px black;
+}
+
+.logo{
+  width: 100%;
+  height: 100%;
+  border-radius: 0 0 0 16px;
+}
+
+.text {
+  font-size: 2.25em;
+  color: aliceblue;
+  text-shadow: 5px 6px 7px black;
+}
+
+
+ #bildeheader{
+  /* blide tatt fra: https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80 */
+  background-image: url("../bilder/bildeheader.jpg");
+  margin-top: 20px;
+  justify-content: center;
+  background-size: cover;
+  border-radius: 16px 16px 0 0;
+  background-position: center;
+  display: flex;
+  background-repeat: no-repeat;
+  align-items: center;
+ }
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#conteiner{
+  display: flex;
+  flex-wrap: wrap;
+  place-items: center;
+  justify-content: space-around;
+}
+
+
+img{
+  width: 100%;
+}
+
+.boks1 {
+  background-image: url(bilder/cms.);
+  background-position: center;
+  margin: 10px;
+  padding: 10px;
+  border: 4px solid;
+  border-color: rgb(0, 0, 0);
+  background-color: rgb(29, 31, 31);
+  border-radius: 16px 16px 16px 16px;
+  max-width: 750px;
+}
+
+
+.artikkeltittel{
+  color: aliceblue;
+  text-align: center;
+  font-size:xx-large;
+  font-family: Arial;
+  padding: 2px;
+  text-shadow: 5px 6px 7px black;
+}
+.undertext{
+  color: aliceblue;
+  text-align: left;
+  font-size:medium;
+  font-family: Arial;
+  text-shadow: 5px 6px 7px black;
+}
+
+
+footer{
+  max-height: 100px;
+  grid-area: footer;
+  background-color: rgb(29, 31, 31);
+  text-align: center;
+  color: aliceblue;
+  text-shadow: 5px 6px 7px black;
+}
+main aside, footer {
+  margin: 1px;
+  border-radius: 16px 16px 16px 16px;
+}
+
+
+
+.tabell {
+  display: flex;
+  margin-top: 10px;
+}
+
+
+.kolonne {
+  width: 100%;
+}
+
+
+.rad {
+  border: 3px black solid;
+  height: 50px;
+  width: 100%;
+  background-color:rgb(29, 31, 31) ;
+  color: aliceblue;
+  text-shadow: 5px 6px 7px black;
+  text-align:  center;
+}
