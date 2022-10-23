@@ -152,5 +152,6 @@ main aside, footer {
   background-color:rgb(29, 31, 31) ;
   color: aliceblue;
   text-shadow: 5px 6px 7px black;
-  text-align:  center;
+  padding-top: 1px ;
+  text-align: center;
 }
