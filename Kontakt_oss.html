@@ -1,7 +1,8 @@
 <!DOCTYPE html>     
     <html lang="nb">
     <head>
-        <title>webutwikling del 2</title>
+        <title>Webutwikling del 3</title>
+        <meta name="keywords" content="HTML, Webutvikling">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
         <link rel="stylesheet" href="css/style.css" type="text/css">
@@ -11,20 +12,47 @@
     <h1 class="text">webutwikling oblig 2 </h1>
     </header>
     <nav id="nav">
-        <a href="hjemmeside.html"><img src="bilder/logo.png" alt="" class="logo"> </a>
+        <a href="hjemmeside.html"><img src="bilder/logo.png" alt="" class="logo" alt="Header bilde"> </a>
             <ul class="meny">
                 <!-- logo laget på denne nettsiden https://www.freelogodesign.org/ -->
-                <li><a href="hjemmeside.html">Hjem</a></li>
-                <li><a href="UU_vs_SEO.html">UU vs SEO</a></li>
-                <li><a href="CMS.html">CMS</a></li>
-                <li><a href="Analyse.html">Analyse</a></li>
-                <li><a href="Kontakt_oss.html" class="kontakt">Kontakt oss</a></li>   
+                <li><a class="text" href="hjemmeside.html">Hjem</a></li>
+                <li><a class="text" href="UU_vs_SEO.html">UU vs SEO</a></li>
+                <li><a class="text" href="CMS.html">CMS</a></li>
+                <li><a class="text" href="Analyse.html">Analyse</a></li>
+                <li><a class="text" href="Kontakt_oss.html" class="kontakt">Kontakt oss</a></li>   
             </ul>
     </nav>
     <main id="container">
         <section class="boks1">
-            <h2 class="artikkeltittel">Se i footer får kontakt informasjon </h2>
+            <h2 class="artikkeltittel">Kontakt informasjon </h2>
+            <p class="undertext">Adresse: B R A veien 4  1757 Halden</p> 
+            <p class="undertext">Epost: postmottak@hiof.no</p> 
+            <p class="undertext">Telefon nummer: 69 60 80 00</p> 
     </section>
+    <!-- fikk hjelp herfra: https://www.w3schools.com/howto/howto_css_contact_form.asp -->
+    <div class="boks1">
+        <form action="action_page.php">
+      
+          <label class="text" for="fnavn">Fornavn</label>
+          <input type="text" id="fnavn" name="firstname" placeholder="Ditt fornavn..">
+      
+          <label class="text" for="lnavn">Etternavn</label>
+          <input type="text" id="lnavn" name="lastname" placeholder="Dit etternavn..">
+      
+          <label class="text" for="country">Land</label>
+          <select id="country" name="country">
+            <option value="norge">Norges</option>
+            <option value="svergie">Svergie</option>
+            <option value="usa">USA</option>
+            <option value="none">Ikke på listen</option>
+          </select>
+      
+          <label class="text" for="subject">Hva handler det om?</label>
+          <textarea id="subject" name="subject" placeholder="Skriv her.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Send inn">
+        </form>
+      </div>
     </main>
     <footer>
         <p>Herman Fagerlie</p>

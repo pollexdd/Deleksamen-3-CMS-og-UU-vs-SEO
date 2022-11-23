@@ -2,6 +2,7 @@
     <html lang="nb">
     <head>
         <title>Webutwikling del 3</title>
+        <meta name="keywords" content="HTML, CMS, Webutvikling">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
         <link rel="stylesheet" href="css/style.css" type="text/css">
@@ -11,21 +12,56 @@
     <h1 class="text">webutwikling oblig 2 </h1>
     </header>
     <nav id="nav">
-        <a href="hjemmeside.html"><img src="bilder/logo.png" alt="" class="logo"> </a>
+        <a href="hjemmeside.html"><img src="bilder/logo.png" alt="" class="logo" alt="Header bilde"> </a>
             <ul class="meny">
                 <!-- logo laget på denne nettsiden https://www.freelogodesign.org/ -->
-                <li><a href="hjemmeside.html">Hjem</a></li>
-                <li><a href="UU_vs_SEO.html">UU vs SEO</a></li>
-                <li><a href="CMS.html">CMS</a></li>
-                <li><a href="Analyse.html">Analyse</a></li>
-                <li><a href="Kontakt_oss.html" class="kontakt">Kontakt oss</a></li>   
-            </ul>
+                <li><a class="text" href="hjemmeside.html">Hjem</a></li>
+                <li><a class="text" href="UU_vs_SEO.html">UU vs SEO</a></li>
+                <li><a class="text" href="CMS.html">CMS</a></li>
+                <li><a class="text" href="Analyse.html">Analyse</a></li>
+                <li><a class="text" href="Kontakt_oss.html" class="kontakt">Kontakt oss</a></li>   
+            </ul> 
     </nav>
     <main id="container">
         <section class="boks1">
-            <h2 class="artikkeltittel"> Her kommer det mer om CMS</h2>
+            <h2 class="artikkeltittel"> CMS</h2>
+            <p class="undertext"> CMS står for content management system. Det er flere typer CMS som Headless CMS, Tradisjonal CMS og ingen CMS som denne nettsiden er. Et Headless CMS hånterer backend  på din nettside mens frontend "hvordan din nettside ser ut" kan endres fritt, men må kodes av utviklere. Et tradisjonelt CMS hånterer alt med nettsiden for deg, man kan lage sin egen nettside med ferdige moduler som CMS leverandøren tilbyr. Ekempel på et tradisjonelt CMS er <a class="links" href="https://www.squarespace.com/">www.squarespace.com/</a>. Ingen CMS som denne nettsiden er må alt hånteres manuelt, men da har man også mest frihet til å gjøre det man vil.  </p>
+            <p class="undertext"> Det er noen store fordeler med å lage sin nettside i ett CMS. CMS leverandører opdaterer sin egen sikkerhet ofte for å hindre exploits på nettsider de leverer. Hvis du ikke har noe CMS må man sette opp alt med nettsiden din selv. Et tradisjonelt CMS har ferdige pakker som gjør det å lage en nettside mye lettere. Mange CSM leverandører tenker også på UU OG SEO og hjelper deg med dette.  </p>
+            <p class="undertext">Under ser du en liste over forskjellige typer CMS med eksempel levrandører av de forskjellige typene</p>
+            <ul class="undertext">
+                <li > Component Content Management System (CCMS) <a class="links" href="https://www.sanity.io/"> https://www.sanity.io/</a></li>  
+                <li>Document Management System (DMS) <a class="links" href="https://start.docuware.com/"> https://start.docuware.com/</a></li>      
+                <li>Enterprise Content Management System (ECM) <a class="links" href="https://www.instructure.com/canvas"> https://www.instructure.com/canvas</a></li> 
+                <li> Web Content Management System (WCMS)  <a class="links" href="https://wordpress.com/"> https://wordpress.com/</a></li> 
+                <li>Digital Asset Management System (DAM) <a class="links" href="https://www.canto.com/"> https://www.canto.com/</a></li> 
+            </ul>
         </section>
-
+    
+        <div class="tabell">
+            <div class="kolonne">
+                <div class="rad"></div>
+                <div class="rad">Headless CMS</div>
+                <div class="rad">Tradisjonal CMS</div>
+                <div class="rad">Ingen CMS</div>
+            </div>
+            <div class="kolonne">
+                <div class="rad">Automatisk oppdatering</div>
+                <div class="rad">X</div>
+                <div class="rad">X</div>
+                <div class="rad"></div>
+            </div>
+            <div class="kolonne">
+                <div class="rad">Må ha utviklere</div>
+                <div class="rad">X</div>
+                <div class="rad"></div>
+                <div class="rad">X</div>
+            </div>
+            <div class="kolonne">
+                <div class="rad">Ferdig frontend</div>
+                <div class="rad"></div>
+                <div class="rad">X</div>
+                <div class="rad"></div>
+            </div>
 
     </main>
     <footer>
