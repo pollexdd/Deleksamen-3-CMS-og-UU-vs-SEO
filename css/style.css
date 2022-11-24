@@ -1,4 +1,3 @@
-
 body {
   /* bakgrunnsbilde tatt fra: https://c4.wallpaperflare.com/wallpaper/790/791/601/northern-lights-aurora-borealis-uk-2015-wallpaper-preview.jpg */
   background-image: url("../bilder/bakgrunnsbilde.jpg");
@@ -40,6 +39,10 @@ nav li a {
   font-size:xx-large;
   text-shadow: 5px 6px 7px black;
 }
+nav li:hover {
+  opacity: 0.7;
+}
+
 
 .logo{
   width: 100%;
@@ -119,13 +122,24 @@ img{
 
 
 footer{
-  max-height: 100px;
+  max-height: 200px;
   grid-area: footer;
   background-color: rgb(29, 31, 31);
   text-align: center;
   color: aliceblue;
   text-shadow: 5px 6px 7px black;
+  
 }
+
+footer li{
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: flex;
+  list-style: none;
+  float: right;
+  display: inline-flex;
+}
+
 main aside, footer {
   margin: 1px;
   border-radius: 16px 16px 16px 16px;
@@ -151,7 +165,7 @@ main aside, footer {
   background-color:rgb(29, 31, 31) ;
   color: aliceblue;
   text-shadow: 5px 6px 7px black;
-  padding-top: 1px ;
+  padding-top: 10px ;
   text-align: center;
 }
 
@@ -187,4 +201,40 @@ input[type=submit] {
 }
 input[type=submit]:hover {
   background-color: #45a049;
+}
+
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-pinterest {
+  background: #8a2222;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
 }
