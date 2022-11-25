@@ -246,3 +246,69 @@ input[type=submit]:hover {
   text-decoration: none;
   border-radius: 50%;
 }
+
+label {
+  display: none;
+  font-size: 26px;
+  line-height: 70px;
+  margin: 0 auto;
+  }
+
+
+#toggle {
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+body {
+  grid-template-columns:0.75fr 5fr 1.6fr 0.75fr;
+  grid-template-rows: .25fr auto auto 1fr auto;
+  grid-template-areas: ". header header ."
+                       ".     nav     nav     ."
+                       ".  main     main     ."
+                       ".    footer  footer  ."
+}
+
+label {
+  display: block;
+  cursor: pointer;
+  color: white;
+}
+.knapp:hover {
+  opacity: 0.7;
+}
+
+.boks1{
+  width: 340px;
+  height: 340px;
+}
+
+img {
+  height: 340px;
+  width: 340px;
+}
+
+.meny {
+  text-align: center;
+  width: 100%;
+  display: none;
+}
+.meny li a {
+  clear: right;
+  display: block;
+  border: 1px solid white;
+}
+#toggle:checked +.meny {
+  display: flex;
+  flex-direction: column;
+  background-color:rgb(29, 31, 31) ;
+}
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(1, 1fr);
+}
+}
