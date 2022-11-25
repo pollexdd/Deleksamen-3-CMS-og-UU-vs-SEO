@@ -27,24 +27,23 @@ body {
   border-top: none;
 }
 
-
-
 nav li {
   list-style: none;
   display: inline-flex;
   margin: 15px;
   line-height: 50px;
 }
+
 nav li a {
   color: aliceblue;
   padding: 5px;
   font-size:xx-large;
   text-shadow: 5px 6px 7px black;
 }
+
 nav li:hover {
   opacity: 0.7;
 }
-
 
 .logo{
   width: 100%;
@@ -58,8 +57,7 @@ nav li:hover {
   text-shadow: 5px 6px 7px black;
 }
 
-
- #bildeheader{
+#bildeheader{
   /* blide tatt fra: https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80 */
   background-image: url("../bilder/bildeheader.jpg");
   margin-top: 20px;
@@ -85,15 +83,24 @@ main {
   grid-template-columns: repeat(2, 1fr);
 }
 
+.artikkelbilde {
+  float: center;
+  max-width: 700px;
+  max-height: 700px;
+  margin: 5px
+  
+}
+
+.links {
+  color: rgb(128, 126, 230);
+}
+
 #conteiner{
   display: flex;
   flex-wrap: wrap;
   place-items: center;
   justify-content: space-around;
 }
-
-
-
 
 .boks1 {
   background-position: center;
@@ -143,26 +150,49 @@ footer li{
   display: flex;
   list-style: none;
   display: inline-flex;
-  margin-left: 10px;
+  margin-right: 35px;
 }
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-pinterest {
+  background: #8a2222;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
 
 main aside, footer {
   margin: 1px;
   border-radius: 16px 16px 16px 16px;
 }
 
-
-
 .tabell {
   display: flex;
   margin-top: 10px;
 }
 
-
 .kolonne {
   width: 100%;
 }
-
 
 .rad {
   border: 3px black solid;
@@ -173,18 +203,6 @@ main aside, footer {
   text-shadow: 5px 6px 7px black;
   padding-top: 10px ;
   text-align: center;
-}
-
-.artikkelbilde {
-  float: center;
-  max-width: 700px;
-  max-height: 700px;
-  margin: 5px
-  
-}
-
-.links {
-  color: rgb(128, 126, 230);
 }
 
 input[type=text], select, textarea {
@@ -210,49 +228,12 @@ input[type=submit]:hover {
   background-color: #45a049;
 }
 
-
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-}
-
-
-.fa:hover {
-  opacity: 0.7;
-}
-
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
-.fa-pinterest {
-  background: #8a2222;
-  color: white;
-}
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
-
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
-}
-
 label {
   display: none;
   font-size: 26px;
   line-height: 70px;
   margin: 0 auto;
   }
-
 
 #toggle {
   display: none;
