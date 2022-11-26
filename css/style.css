@@ -78,6 +78,12 @@ header {
   grid-area: header;
 }
 
+.headertittel {
+  font-size: 2.25em;
+  color: aliceblue;
+  text-shadow: 5px 6px 7px black;
+}
+
 main {
   grid-area: main;
   display: grid;
@@ -92,7 +98,7 @@ main {
 }
 
 .links {
-  color: rgb(128, 126, 230);
+  color: rgb(128, 126, 243);
 }
 
 #conteiner{
@@ -239,15 +245,13 @@ label {
 }
 @media only screen and (max-width: 600px) {
 body {
-  grid-template-columns:0.75fr 5fr 1.6fr 0.75fr;
+  grid-template-columns:0.1fr 5fr 1.6fr 0.75fr;
   grid-template-rows: .25fr auto auto 1fr auto;
   grid-template-areas: ". header header ."
                        ".     nav     nav     ."
                        ".  main     main     ."
                        ".    footer  footer  ."
 }
-
-
 
 label {
   display: block;
@@ -258,8 +262,16 @@ label {
   opacity: 0.7;
 }
 
+.headertittel {
+  font-size: medium;
+  color: aliceblue;
+  text-shadow: 5px 6px 7px black;
+}
+
+
+
 .boks1{
-  width: 340px;
+  width: 230px;
   height: auto;
   background-position: center;
   margin: 10px;
@@ -271,7 +283,7 @@ label {
 }
 
 .artikkelbilde{
-  width: 325px ;
+  width: 220px;
 }
 
 .logo {
@@ -302,4 +314,41 @@ main {
   flex-wrap: wrap;
   grid-template-columns: repeat(1, 1fr);
 }
+
+main li {
+  list-style: none;
+  float: center;
+}
+
+.tabell {
+  display: flex;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+
+.kolonne {
+  text-align: center;
+  width: 100%;
+  font-size: small;
+}
+.rad {
+  border: 3px black solid;
+  width: 100%;
+  background-color: rgb(46, 48, 48);
+  color: aliceblue;
+  text-shadow: 5px 6px 7px black;
+  padding-top: 10px ;
+  text-align: center;
+}
+
+footer li{
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: flex;
+  list-style: none;
+  display: inline-flex;
+  margin-right: 10px;
+}
+
+
 }
