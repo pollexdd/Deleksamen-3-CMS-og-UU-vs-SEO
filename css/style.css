@@ -1,6 +1,6 @@
 body {
   /* bakgrunnsbilde tatt fra: https://c4.wallpaperflare.com/wallpaper/790/791/601/northern-lights-aurora-borealis-uk-2015-wallpaper-preview.jpg */
-  background-image: url("../bilder/bakgrunnsbilde.jpg");
+  background-image: url("../bilder/bakgrunnsbilde.webp");
   background-size: cover;
   background-repeat: no-repeat;
   display: grid;
@@ -28,6 +28,7 @@ body {
 }
 
 nav li {
+  padding-top: 35px;
   list-style: none;
   display: inline-flex;
   margin: 15px;
@@ -59,7 +60,7 @@ nav li:hover {
 
 #bildeheader{
   /* blide tatt fra: https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80 */
-  background-image: url("../bilder/bildeheader.jpg");
+  background-image: url("../bilder/bildeheader.webp");
   margin-top: 20px;
   justify-content: center;
   background-size: cover;
@@ -84,7 +85,6 @@ main {
 }
 
 .artikkelbilde {
-  float: center;
   max-width: 700px;
   max-height: 700px;
   margin: 5px
@@ -193,7 +193,6 @@ main aside, footer {
 .kolonne {
   width: 100%;
 }
-
 .rad {
   border: 3px black solid;
   height: 50px;
@@ -247,6 +246,8 @@ body {
                        ".  main     main     ."
                        ".    footer  footer  ."
 }
+
+
 
 label {
   display: block;
