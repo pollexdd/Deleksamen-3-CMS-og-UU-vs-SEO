@@ -14,6 +14,7 @@ body {
   font-family: arial;
   }
 
+
 #nav {
   grid-area: nav;
   display: flex;
@@ -25,14 +26,13 @@ body {
   border: 4px solid;
   border-color: rgb(0, 0, 0);
   border-top: none;
+  height: 100px;
 }
 
 nav li {
-  padding-top: 35px;
   list-style: none;
   display: inline-flex;
   margin: 15px;
-  line-height: 50px;
 }
 
 nav li a {
@@ -48,7 +48,7 @@ nav li:hover {
 
 .logo{
   width: 100%;
-  height: 100%;
+  height: 100px;
   border-radius: 0 0 0 16px;
 }
 
@@ -91,8 +91,8 @@ main {
 }
 
 .artikkelbilde {
-  max-width: 700px;
-  max-height: 700px;
+  width: 700px;
+  height: px;
   margin: 5px
   
 }
@@ -150,13 +150,12 @@ footer{
   
 }
 
-footer li{
+main li{
   flex-direction: row;
   flex-wrap: wrap;
   display: flex;
   list-style: none;
   display: inline-flex;
-  margin-right: 35px;
 }
 
 .fa {
@@ -253,6 +252,20 @@ body {
                        ".    footer  footer  ."
 }
 
+#nav {
+  grid-area: nav;
+  display: flex;
+  background-color: rgb(46, 48, 48);
+  border-radius: 0 0 16px 16px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 1px;
+  border: 4px solid;
+  border-color: rgb(0, 0, 0);
+  border-top: none;
+  height: auto;
+}
+
 label {
   display: block;
   cursor: pointer;
@@ -284,6 +297,7 @@ label {
 
 .artikkelbilde{
   width: 220px;
+  height: 150px;
 }
 
 .logo {
@@ -341,7 +355,7 @@ main li {
   text-align: center;
 }
 
-footer li{
+main li{
   flex-direction: row;
   flex-wrap: wrap;
   display: flex;
