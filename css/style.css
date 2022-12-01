@@ -14,6 +14,31 @@ body {
   font-family: arial;
   }
 
+#bildeheader{
+  /* blide tatt fra: https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80 */
+  background-image: url("../bilder/bildeheader.webp");
+  margin-top: 20px;
+  justify-content: center;
+  background-size: cover;
+  border-radius: 16px 16px 0 0;
+  background-position: center;
+  display: flex;
+  background-repeat: no-repeat;
+  align-items: center;
+  border: 4px solid;
+  border-color: rgb(0, 0, 0);
+  border-bottom: none;
+ }
+
+header {
+  grid-area: header;
+}
+
+.headertittel {
+  font-size: 2.25em;
+  color: aliceblue;
+  text-shadow: 5px 6px 7px black;
+}
 
 #nav {
   grid-area: nav;
@@ -52,38 +77,6 @@ nav li:hover {
   border-radius: 0 0 0 16px;
 }
 
-.text {
-  font-size: 2.25em;
-  color: aliceblue;
-  text-shadow: 5px 6px 7px black;
-}
-
-#bildeheader{
-  /* blide tatt fra: https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80 */
-  background-image: url("../bilder/bildeheader.webp");
-  margin-top: 20px;
-  justify-content: center;
-  background-size: cover;
-  border-radius: 16px 16px 0 0;
-  background-position: center;
-  display: flex;
-  background-repeat: no-repeat;
-  align-items: center;
-  border: 4px solid;
-  border-color: rgb(0, 0, 0);
-  border-bottom: none;
- }
-
-header {
-  grid-area: header;
-}
-
-.headertittel {
-  font-size: 2.25em;
-  color: aliceblue;
-  text-shadow: 5px 6px 7px black;
-}
-
 main {
   grid-area: main;
   display: grid;
@@ -119,7 +112,6 @@ main {
   max-width: 750px;
 }
 
-
 .artikkeltittel{
   color: aliceblue;
   text-align: center;
@@ -135,19 +127,6 @@ main {
   font-size:medium;
   font-family: Arial;
   text-shadow: 5px 6px 7px black;
-}
-
-
-footer{
-  max-height: 200px;
-  grid-area: footer;
-  background-color: rgb(46, 48, 48);
-  text-align: center;
-  color: aliceblue;
-  text-shadow: 5px 6px 7px black;
-  border: 4px solid;
-  border-color: rgb(0, 0, 0);
-  
 }
 
 main li{
@@ -226,7 +205,7 @@ input[type=submit] {
   cursor: pointer;
 }
 input[type=submit]:hover {
-  background-color: #45a049;
+  opacity: 0.7;
 }
 
 label {
@@ -236,6 +215,17 @@ label {
   margin: 0 auto;
   }
 
+footer{
+  max-height: 200px;
+  grid-area: footer;
+  background-color: rgb(46, 48, 48);
+  text-align: center;
+  color: aliceblue;
+  text-shadow: 5px 6px 7px black;
+  border: 4px solid;
+  border-color: rgb(0, 0, 0);
+  
+}
 .shareknapp:hover{
   opacity: 0.7;
 }
@@ -268,11 +258,33 @@ body {
   height: auto;
 }
 
+.logo {
+  width: 70px;
+}
+.meny {
+  text-align: center;
+  width: 100%;
+  display: none;
+}
+
+.meny li a {
+  clear: right;
+  display: block;
+  border: 1px solid white;
+}
+
+#toggle:checked +.meny {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(46, 48, 48);
+}
+
 label {
   display: block;
   cursor: pointer;
   color: white;
 }
+
 .knapp:hover {
   opacity: 0.7;
 }
@@ -282,8 +294,6 @@ label {
   color: aliceblue;
   text-shadow: 5px 6px 7px black;
 }
-
-
 
 .boks1{
   width: 230px;
@@ -302,25 +312,6 @@ label {
   height: 150px;
 }
 
-.logo {
-  width: 70px;
-}
-
-.meny {
-  text-align: center;
-  width: 100%;
-  display: none;
-}
-.meny li a {
-  clear: right;
-  display: block;
-  border: 1px solid white;
-}
-#toggle:checked +.meny {
-  display: flex;
-  flex-direction: column;
-  background-color: rgb(46, 48, 48);
-}
 main {
   width: 100%;
   display: flex;
